@@ -1,0 +1,142 @@
+.profile-headers {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  background-color: #131313;
+  height: 90px;
+  padding: 10px;
+  width: 100vw;
+  top: 0;
+  z-index: 999;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+.profile-movie-logo {
+  height: 50px;
+}
+
+.profile-start-part {
+  display: flex;
+  align-items: center;
+}
+.profile-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 15px;
+}
+
+.profile-nav-link {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 16px;
+}
+.profile-end-part {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.profile-end-part-list {
+  display: flex;
+}
+.profile-img {
+  height: 30px;
+  margin-left: 15px;
+}
+.profile-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+  margin-left: 80px;
+}
+.Profile-heading {
+  font-size: 34px;
+  color: #000;
+  margin-top: 100px;
+}
+.account-details {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.membership-details {
+  color: #94a3b8;
+  font-size: 18px;
+}
+.person-login-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.person {
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.acc-password {
+  color: #94a3b8;
+  font-size: 18px;
+}
+.membership-type {
+  margin-left: 10px;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logout-btn {
+  background: #e50914;
+  color: #ffffff;
+  height: 40px;
+  width: 84px;
+  left: 678px;
+  top: 628px;
+  border-radius: 4px;
+  padding: 8px, 20px, 8px, 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-movie-logo {
+    height: 35px;
+  }
+  .profile-content-container {
+    width: 95%;
+    margin-top: 15px;
+  }
+  .profile-nav-bar-links {
+    display: none;
+  }
+  .profileImg {
+    height: 25px;
+    margin-left: 10px;
+  }
+  .profile-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    margin-left: 40px;
+  }
+  .person-login-info {
+    margin-left: 20px;
+  }
+  .Profile-heading {
+    font-size: 28px;
+    color: #000;
+    margin-top: 80px;
+  }
+}
