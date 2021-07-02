@@ -6,18 +6,21 @@ const Profile = props => {
   const logout = () => {
     const {history} = props
     Cookies.remove('request_token')
-    history.replace('/')
+    history.replace('/login')
   }
   return (
     <>
       <div className="profile-headers">
         <div className="profile-content-container">
           <div className="profile-start-part">
-            <img
-              className="movie-logo"
-              src="https://res.cloudinary.com/dnjj1m9j1/image/upload/v1624196500/Group_7399_cjjn5h.png"
-              alt="movielogo"
-            />
+            <Link to="/">
+              <img
+                className="movie-logo"
+                src="https://res.cloudinary.com/dnjj1m9j1/image/upload/v1624196500/Group_7399_cjjn5h.png"
+                alt="movielogo"
+              />
+            </Link>
+
             <ul className="profile-nav-bar-links">
               <Link to="/" className="profile-nav-link">
                 Home

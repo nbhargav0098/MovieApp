@@ -1,9 +1,9 @@
-input[type='search'] {
+.user-search-input {
   box-sizing: border-box;
   padding-left: 10px;
   font-size: 16px;
   width: 200px;
-  height: 30px;
+  height: 28px;
   border: none;
   background-color: transparent;
   background-image: url('https://res.cloudinary.com/dnjj1m9j1/image/upload/v1624197438/search_xchhbf.png');
@@ -11,7 +11,7 @@ input[type='search'] {
   background-position: 99% 100%;
 }
 
-input[type='search']:focus {
+.user-search-input:focus {
   background-color: transparent;
   outline: none;
   border: 2px solid #fff;
@@ -21,7 +21,7 @@ input[type='search']:focus {
   font-size: 14px;
 }
 @media screen and (max-width: 768px) {
-  input[type='search'] {
+  .user-search-input {
     box-sizing: border-box;
     padding-left: 5px;
     font-size: 12px;
@@ -33,13 +33,13 @@ input[type='search']:focus {
     background-repeat: no-repeat;
     background-position: 99% 100%;
   }
-  input[type='search']:focus {
+  .user-search-input:focus {
     background-color: transparent;
     outline: none;
     border: 2px solid #fff;
     box-sizing: border-box;
     border-radius: 2px;
-    color: #000;
+    color: #fff;
     font-size: 11px;
   }
 }

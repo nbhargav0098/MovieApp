@@ -1,22 +1,22 @@
 .search-item-container {
-  height: 230px;
-  width: 230px;
+  height: 250px;
+  width: 260px;
   margin: 10px;
 }
 .search-img {
-  height: 230px;
-  width: 230px;
+  height: 250px;
+  width: 260px;
   border-radius: 10px;
 }
 @media screen and (max-width: 768px) {
   .search-item-container {
-    height: 190px;
-    width: 170px;
+    height: 210px;
+    width: 150px;
     margin: 5px;
   }
   .search-img {
-    height: 190px;
-    width: 170px;
+    height: 210px;
+    width: 150px;
     border-radius: 5px;
   }
 }
