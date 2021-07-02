@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import {withRouter} from 'react-router-dom'
 import Header from '../Header'
 import SearchMovieItem from '../SearchMovieItem'
 import './index.css'
@@ -16,9 +17,11 @@ class DisplaySearchMovies extends Component {
   }
 
   getSearchResultsData = async () => {
+    console.log(this.props)
     const {match} = this.props
     const {params} = match
     const {movies} = params
+    console.log(movies)
     const fetchResponseData = await fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=a296c915c9f82c25cca95eab8568c3a2&language=en-US&query=${movies}&page=${this.searchPageNum}`,
     )
@@ -98,4 +101,4 @@ class DisplaySearchMovies extends Component {
     )
   }
 }
-export default DisplaySearchMovies
+export default withRouter(DisplaySearchMovies)

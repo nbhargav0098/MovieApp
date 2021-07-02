@@ -10,19 +10,13 @@ class Search extends Component {
     history.push(`/search/${value}`)
   }
 
-  /* showErrorPage=()=>{
-
-  } */
-
   onSubmitSearch = async event => {
     event.preventDefault()
     const {userInputValue} = this.state
     const searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=a296c915c9f82c25cca95eab8568c3a2&language=en-US&query=${userInputValue}`
     const response = await fetch(searchUrl)
     const searchResponses = await response.json()
-    /* const searchResponseResult = searchResponses.results */
-    /* this.setState({queryResults: searchResponseResult}) */
-    console.log(searchResponses)
+
     if (searchResponses.results.length !== 0) {
       this.startSearch(userInputValue)
     } /* else{
@@ -40,10 +34,11 @@ class Search extends Component {
       <div>
         <form onSubmit={this.onSubmitSearch}>
           <input
-            type="search"
+            type="text"
             placeholder="Search..."
             onChange={this.onChangeInput}
             value={userInputValue}
+            className="user-search-input"
           />
         </form>
       </div>

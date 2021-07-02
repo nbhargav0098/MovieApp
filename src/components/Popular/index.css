@@ -15,7 +15,7 @@
   margin-top: 40px;
   flex-wrap: wrap;
   margin-top: 100px;
-  width: 98%;
+  width: 95%;
   margin-bottom: 30px;
 }
 .page-count-container {
@@ -60,4 +60,8 @@
     margin-bottom: 40px;
     color: #fff;
   }
+  .movie-list-container {
+    width: 98%;
+  }
 }
+

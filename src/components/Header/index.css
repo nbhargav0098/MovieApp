@@ -1,12 +1,18 @@
 .headers {
   display: flex;
-  position: fixed;
   justify-content: space-around;
-  width: 100vw;
+  position: fixed;
+  width: 100%;
+  height: 80px;
   top: 0;
   z-index: 999;
   transition-timing-function: ease-in;
   transition: all 0.5s;
+}
+.dark-header {
+  background-color: #111;
+  height: 10px;
+  height: 80px;
 }
 .movie-logo {
   height: 50px;
@@ -22,6 +28,7 @@
   justify-content: space-between;
   width: 90%;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .nav-link {
@@ -35,14 +42,21 @@
 .end-part {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 .end-part-list {
   display: flex;
+  align-items: center;
 }
 .header-profile-img {
-  height: 30px;
+  height: 32px;
+  margin-top: 5px;
   margin-left: 15px;
+}
+.add-icon {
+  display: none;
+}
+.new-nav-bar-links {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -59,5 +73,24 @@
   .header-profile-img {
     height: 25px;
     margin-left: 10px;
+  }
+  .accounts {
+    display: none;
+  }
+  .add-icon {
+    display: flex;
+    margin-top: 6px;
+  }
+  .new-nav-bar-links {
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    height: auto;
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
   }
 }

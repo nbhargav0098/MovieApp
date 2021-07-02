@@ -5,18 +5,24 @@ import HomePage from './components/HomePage'
 import Popular from './components/Popular'
 import Movies from './components/Movies'
 import Profile from './components/Profile'
+import ProtectedRoute from './components/ProtectedRoute'
 import DisplaySearchMovies from './components/DisplaySearchMovies'
+
 import './App.css'
 
 const App = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/login" component={LoginPage} />
-      <Route exact path="/" component={HomePage} />
-      <Route exact path="/popular" component={Popular} />
-      <Route exact path="/movies/:id" component={Movies} />
-      <Route exact path="/search/:movies" component={DisplaySearchMovies} />
-      <Route exact path="/Profile" component={Profile} />
+      <ProtectedRoute exact path="/" component={HomePage} />
+      <ProtectedRoute exact path="/popular" component={Popular} />
+      <ProtectedRoute exact path="/movies/:id" component={Movies} />
+      <ProtectedRoute
+        exact
+        path="/search/:movies"
+        component={DisplaySearchMovies}
+      />
+      <ProtectedRoute exact path="/Profile" component={Profile} />
     </Switch>
   </BrowserRouter>
 )
