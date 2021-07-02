@@ -24,28 +24,28 @@ const HomePage = () => (
       <div className="footer-container">
         <div className="icons">
           <IconContext.Provider
-            value={{style: {fontSize: '18px', color: 'white'}}}
+            value={{style: {fontSize: '14px', color: 'white'}}}
           >
             <GrGoogle />
           </IconContext.Provider>
         </div>
         <div className="icons">
           <IconContext.Provider
-            value={{style: {fontSize: '20px', color: 'white'}}}
+            value={{style: {fontSize: '15px', color: 'white'}}}
           >
             <GrTwitter />
           </IconContext.Provider>
         </div>
         <div className="icons">
           <IconContext.Provider
-            value={{style: {fontSize: '20px', color: 'white'}}}
+            value={{style: {fontSize: '15px', color: 'white'}}}
           >
             <GrInstagram />
           </IconContext.Provider>
         </div>
         <div className="icons">
           <IconContext.Provider
-            value={{style: {fontSize: '20px', color: 'white'}}}
+            value={{style: {fontSize: '15px', color: 'white'}}}
           >
             <GrYoutube />
           </IconContext.Provider>
